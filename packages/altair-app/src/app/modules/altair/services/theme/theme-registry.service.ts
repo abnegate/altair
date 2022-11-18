@@ -7,6 +7,8 @@ import {
   mergeThemes,
 } from 'altair-graphql-core/build/theme';
 
+import { appwriteDark } from 'altair-appwrite/build/theme';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -21,6 +23,7 @@ export class ThemeRegistryService {
     this.registry.set('light', light);
     this.registry.set('dark', dark);
     this.registry.set('dracula', dracula);
+    this.registry.set('appwrite-dark', appwriteDark);
   }
 
   getTheme(name: string) {

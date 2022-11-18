@@ -1,0 +1,36 @@
+{
+  "name": "altair-appwrite",
+  "version": "5.0.4",
+  "description": "Appwrite extensions for Altair GraphQL Client",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "declarations": "tsc --declaration",
+    "prepare": "npm run declarations"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altair-graphql/altair.git"
+  },
+  "keywords": [
+    "altair",
+    "graphql"
+  ],
+  "author": "Samuel Imolorhe <altair@sirmuel.design> (https://sirmuel.design)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/altair-graphql/altair/issues"
+  },
+  "homepage": "https://github.com/altair-graphql/altair#readme",
+  "devDependencies": {
+    "typescript": "4.7.4"
+  },
+  "dependencies": {
+    "@aw-labs/ui": "0.0.0-77",
+    "@aw-labs/icons": "0.0.0-77"
+  }
+}
