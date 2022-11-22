@@ -12,6 +12,7 @@ export const foundations = {
     green: "#64CB29",
     blue: "#2d9ee0",
     rose: "#f45b69",
+    pink: "#f02e65",
     cerise: "#f00faa",
     red: "#ed6a5a",
     orange: "#edae49",
@@ -36,7 +37,7 @@ export const foundations = {
 const theme = deepmerge(foundations, {
   isSystem: false,
   colors: {
-    primary: foundations.colors.green,
+    primary: foundations.colors.pink,
     secondary: foundations.colors.blue,
     tertiary: foundations.colors.rose,
 
@@ -65,7 +66,7 @@ const theme = deepmerge(foundations, {
       variable: foundations.colors.black,
       keyword: foundations.colors.blue,
       atom: foundations.colors.black,
-      attribute: foundations.colors.green,
+      attribute: foundations.colors.pink,
       property: foundations.colors.blue,
       punctuation: foundations.colors.blue,
       definition: foundations.colors.orange,

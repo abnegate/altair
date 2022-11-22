@@ -19,7 +19,7 @@ const theme: ICustomTheme = {
       string: foundations.colors.orange,
       number: foundations.colors.orange,
       variable: foundations.colors.white,
-      attribute: foundations.colors.green,
+      attribute: foundations.colors.pink,
       keyword: foundations.colors.blue,
       atom: foundations.colors.white,
       property: foundations.colors.blue,

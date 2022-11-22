@@ -416,20 +416,6 @@
   resolved "https://registry.yarnpkg.com/@assemblyscript/loader/-/loader-0.10.1.tgz#70e45678f06c72fa2e350e8553ec4a4d72b92e06"
   integrity sha512-H71nDOOL8Y7kWRLqf6Sums+01Q5msqBW2KhDUTemh1tvY04eSkSXrK0uj/4mmY0Xr16/3zyZmsrxN7CKuRbNRg==
 
-"@aw-labs/icons@*", "@aw-labs/icons@0.0.0-77":
-  version "0.0.0-77"
-  resolved "https://registry.yarnpkg.com/@aw-labs/icons/-/icons-0.0.0-77.tgz#16a7bb59ef1228c4342e306d21481a65baee3876"
-  integrity sha512-z/gH6B//qShnlJbf1sxv0ltSbRvJha1El0pl4jACAWDD+orgh2hzBrv6YdgPi1AVBTacu2GWWTcyobItghbpgA==
-
-"@aw-labs/ui@0.0.0-77":
-  version "0.0.0-77"
-  resolved "https://registry.yarnpkg.com/@aw-labs/ui/-/ui-0.0.0-77.tgz#2ca05456ee985636aeff9326312d164c216ff975"
-  integrity sha512-y/7cbPFcK+jUnarsn9X1arrIB69RVMPWMjjIiiaX7uSa0rq9ZN1agBZxfA63meyh23kdIK4K5CcJhatShMMsYg==
-  dependencies:
-    "@aw-labs/icons" "*"
-    normalize.css "^8.0.1"
-    the-new-css-reset "^1.7.3"
-
 "@aws-crypto/sha256-js@^1.2.0":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@aws-crypto/sha256-js/-/sha256-js-1.2.2.tgz#02acd1a1fda92896fc5a28ec7c6e164644ea32fc"
@@ -20464,11 +20450,6 @@ normalize-url@^6.0.1:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-6.1.0.tgz#40d0885b535deffe3f3147bec877d05fe4c5668a"
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
-normalize.css@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
-  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
-
 npm-bundled@^1.1.1, npm-bundled@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.1.2.tgz#944c78789bd739035b70baa2ca5cc32b8d860bc1"
@@ -25872,11 +25853,6 @@ text-table@0.2.0, text-table@^0.2.0, text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
-
-the-new-css-reset@^1.7.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/the-new-css-reset/-/the-new-css-reset-1.7.3.tgz#6231ad48044c760cbf532cfd8b3e6da9d4a67e13"
-  integrity sha512-AiDZRlaS6ccC6CVHMEg+DQyZwfO0/KUvsz+vwmoOw9MlyNv/CaiOEhV1W3iw8ajQbWF0sXWYYhdKGMlCNyILPA==
 
 thenify-all@^1.0.0:
   version "1.6.0"
