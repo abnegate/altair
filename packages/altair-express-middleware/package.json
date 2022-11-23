@@ -1,6 +1,6 @@
 {
   "name": "@jakebarnby/altair-express-middleware",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Express middleware for altair graphql client",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/altair-graphql/altair#readme",
   "dependencies": {
-    "@jakebarnby/altair-static": "^0.1.1",
+    "@jakebarnby/altair-static": "^0.1.2",
     "express": "^4.16.2"
   },
   "devDependencies": {
@@ -45,5 +45,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/altair"
   },
-  "gitHead": "c9a4e5acb277f5c14c8b0abced50470187d62538"
+  "gitHead": "aaf1cc4708068d5f905dd327a79dea50558a234b"
 }
