@@ -1,5 +1,5 @@
 {
-  "name": "functions",
+  "name": "@jakebarnby/functions",
   "version": "0.1.2",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
