@@ -47,9 +47,9 @@ import {
   refactorArgumentsToVariables,
   generateRandomNameForString,
 } from './helpers';
-import { HeaderState } from 'altair-graphql-core/build/types/state/header.interfaces';
-import { FileVariable } from 'altair-graphql-core/build/types/state/variable.interfaces';
-import { SelectedOperation } from 'altair-graphql-core/build/types/state/query.interfaces';
+import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
+import { FileVariable } from '@jakebarnby/altair-graphql-core/build/types/state/variable.interfaces';
+import { SelectedOperation } from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
 import { prettify } from './prettifier';
 import { Position } from '../../utils/editor/helpers';
 

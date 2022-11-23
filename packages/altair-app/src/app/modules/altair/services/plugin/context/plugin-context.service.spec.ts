@@ -11,8 +11,8 @@ import { WindowService } from '../../../services/window.service';
 import { PluginEventService } from '../plugin-event.service';
 import { NotifyService } from '../../../services/notify/notify.service';
 import { SubscriptionProviderRegistryService } from '../../subscriptions/subscription-provider-registry.service';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
-import { AltairPlugin } from 'altair-graphql-core/build/plugin/plugin.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { AltairPlugin } from '@jakebarnby/altair-graphql-core/build/plugin/plugin.interfaces';
 
 const createContext = () => {
   const service: PluginContextService = TestBed.inject(PluginContextService);

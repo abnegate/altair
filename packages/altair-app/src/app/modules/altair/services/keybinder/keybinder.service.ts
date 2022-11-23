@@ -9,7 +9,7 @@ import * as dialogsActions from '../../store/dialogs/dialogs.action';
 import * as queryActions from '../../store/query/query.action';
 import * as collectionActions from '../../store/collection/collection.action';
 import * as docsActions from '../../store/docs/docs.action';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { take } from 'rxjs/operators';
 import { catchUselessObservableError } from '../../utils/errors';
 import { isElectronApp } from '../../utils';

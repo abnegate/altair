@@ -1,4 +1,4 @@
-import { getDistDirectory, renderAltair, RenderOptions, renderInitialOptions } from 'altair-static';
+import { getDistDirectory, renderAltair, RenderOptions, renderInitialOptions } from '@jakebarnby/altair-static';
 import fp from 'fastify-plugin';
 import fastifyStatic from '@fastify/static';
 

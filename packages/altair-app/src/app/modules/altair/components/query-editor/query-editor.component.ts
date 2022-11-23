@@ -18,7 +18,7 @@ import {
   updateSchema,
   showInDocsCommand,
   fillAllFieldsCommands,
-} from 'altair-codemirror-graphql';
+} from '@jakebarnby/altair-codemirror-graphql';
 
 // Import the codemirror packages
 import 'codemirror/addon/comment/comment';
@@ -53,8 +53,8 @@ import { onHasCompletion } from '../../utils/codemirror/graphql-has-completion';
 import { GraphQLSchema } from 'graphql';
 import { handleEditorRefresh } from '../../utils/codemirror/refresh-editor';
 import { IDictionary } from '../../interfaces/shared';
-import { VariableState } from 'altair-graphql-core/build/types/state/variable.interfaces';
-import { QueryEditorState } from 'altair-graphql-core/build/types/state/query.interfaces';
+import { VariableState } from '@jakebarnby/altair-graphql-core/build/types/state/variable.interfaces';
+import { QueryEditorState } from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
 import { Compartment, EditorState, Extension } from '@codemirror/state';
 import { getCodemirrorGraphqlExtensions, noOpCommand } from './gql-extensions';
 import { Position, posToOffset } from '../../utils/editor/helpers';
@@ -67,7 +67,7 @@ import { ResizeEvent } from 'angular-resizable-element';
 import { openSearchPanel } from '@codemirror/search';
 import { updateGqlVariables, updateWindowId } from './upload-widget';
 import { Store } from '@ngrx/store';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 
 const AUTOCOMPLETE_CHARS = /^[a-zA-Z0-9_@(]$/;
 

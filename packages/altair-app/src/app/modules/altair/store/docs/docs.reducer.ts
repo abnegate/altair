@@ -1,4 +1,4 @@
-import { DocsState } from 'altair-graphql-core/build/types/state/docs.interfaces';
+import { DocsState } from '@jakebarnby/altair-graphql-core/build/types/state/docs.interfaces';
 import * as docs from '../../store/docs/docs.action';
 
 export const getInitialState = (): DocsState => {

@@ -1,5 +1,5 @@
-import { getAltairConfig } from 'altair-graphql-core/build/config';
-import { HeaderState } from 'altair-graphql-core/build/types/state/header.interfaces';
+import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
 import { headerMapToList } from '../../utils/headers';
 import * as headers from './headers.action';
 

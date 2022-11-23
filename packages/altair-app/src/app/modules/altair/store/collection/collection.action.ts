@@ -3,7 +3,7 @@ import {
   IQuery,
   IQueryCollection,
   SortByOptions,
-} from 'altair-graphql-core/build/types/state/collection.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 
 export const CREATE_COLLECTION_AND_SAVE_QUERY_TO_COLLECTION =
   'CREATE_COLLECTION_AND_SAVE_QUERY_TO_COLLECTION';

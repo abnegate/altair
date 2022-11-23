@@ -22,7 +22,7 @@ yarn add altair-koa-middleware
 ```js
 import Koa from 'koa';
 import KoaRouter from 'koa-router';
-import { createRouteExplorer } from 'altair-koa-middleware';
+import { createRouteExplorer } from '@jakebarnby/altair-koa-middleware';
 const app = new Koa();
 const router = new KoaRouter();
 

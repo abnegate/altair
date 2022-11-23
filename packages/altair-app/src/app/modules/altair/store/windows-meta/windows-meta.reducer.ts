@@ -1,4 +1,4 @@
-import { WindowsMetaState } from 'altair-graphql-core/build/types/state/windows-meta.interfaces';
+import { WindowsMetaState } from '@jakebarnby/altair-graphql-core/build/types/state/windows-meta.interfaces';
 
 import * as windowsMeta from './windows-meta.action';
 

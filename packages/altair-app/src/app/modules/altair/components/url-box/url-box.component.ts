@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { HTTP_VERBS } from 'altair-graphql-core/build/types/state/query.interfaces';
+import { HTTP_VERBS } from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
 import { OperationDefinitionNode } from 'graphql';
 
 @Component({

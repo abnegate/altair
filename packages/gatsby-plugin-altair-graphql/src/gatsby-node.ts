@@ -1,4 +1,4 @@
-import { altairExpress } from 'altair-express-middleware';
+import { altairExpress } from '@jakebarnby/altair-express-middleware';
 
 export const onCreateDevServer = ({ app }) => {
   app.use('/___altair', altairExpress({

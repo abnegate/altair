@@ -1,5 +1,5 @@
 import { createSelector, Store } from '@ngrx/store';
-import { PerWindowState } from 'altair-graphql-core/build/types/state/per-window.interfaces';
+import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
 import { getInitialState } from './layout.reducer';
 
 export const getLayout = (state: PerWindowState) =>

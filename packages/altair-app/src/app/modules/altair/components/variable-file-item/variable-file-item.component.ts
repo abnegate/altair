@@ -9,7 +9,7 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { FileVariable } from 'altair-graphql-core/build/types/state/variable.interfaces';
+import { FileVariable } from '@jakebarnby/altair-graphql-core/build/types/state/variable.interfaces';
 import { StorageService } from '../../services';
 import * as fromVariables from '../../store/variables/variables.reducer';
 import { truncateText } from '../../utils';

@@ -1,4 +1,4 @@
-import { getAltairConfig } from 'altair-graphql-core/build/config';
+import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 import performantLocalStorage from '../utils/performant-local-storage';
 
 const getAltairInstanceStorageNamespace = () =>

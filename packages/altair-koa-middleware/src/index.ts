@@ -2,7 +2,7 @@
 
 import * as send from 'koa-send';
 import * as KoaRouter from '@koa/router';
-import { getDistDirectory, renderAltair, RenderOptions } from 'altair-static';
+import { getDistDirectory, renderAltair, RenderOptions } from '@jakebarnby/altair-static';
 
 export const createRouteExplorer = ({ router, url, opts }: { router: KoaRouter, url: string, opts: RenderOptions }) => {
   router.get(url, async (ctx, next) => {

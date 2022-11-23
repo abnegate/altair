@@ -1,6 +1,6 @@
 {
   "extends": "nx/presets/npm.json",
-  "npmScope": "altair",
+  "npmScope": "@jakebarnby/altair",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",

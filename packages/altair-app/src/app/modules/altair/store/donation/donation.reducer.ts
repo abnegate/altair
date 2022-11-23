@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { DonationState } from 'altair-graphql-core/build/types/state/donation.interfaces';
+import { DonationState } from '@jakebarnby/altair-graphql-core/build/types/state/donation.interfaces';
 
 import * as donation from './donation.action';
 

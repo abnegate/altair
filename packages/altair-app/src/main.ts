@@ -12,7 +12,7 @@ import {
   AltairConfig,
   AltairConfigOptions,
   setAltairConfig,
-} from 'altair-graphql-core/build/config';
+} from '@jakebarnby/altair-graphql-core/build/config';
 
 let initialized = false;
 

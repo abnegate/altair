@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
-import { getAltairConfig } from 'altair-graphql-core/build/config';
-import { HistoryState } from 'altair-graphql-core/build/types/state/history.interfaces';
+import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { HistoryState } from '@jakebarnby/altair-graphql-core/build/types/state/history.interfaces';
 
 import * as history from './history.action';
 

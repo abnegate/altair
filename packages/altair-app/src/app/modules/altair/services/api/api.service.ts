@@ -14,7 +14,7 @@ import {
   IQueryCollection,
   IRemoteQuery,
   IRemoteQueryCollection,
-} from 'altair-graphql-core/build/types/state/collection.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { Observable, from, fromEventPattern, merge } from 'rxjs';
 import { mergeMap, switchMap, withLatestFrom } from 'rxjs/operators';
 import { AccountService } from '../account/account.service';

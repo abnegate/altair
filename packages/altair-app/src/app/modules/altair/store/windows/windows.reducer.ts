@@ -4,8 +4,8 @@ import * as windowsActions from './windows.action';
 import { IDictionary } from '../../interfaces/shared';
 import { INIT_WINDOW } from '../action';
 import { normalize } from '../compatibility-normalizer';
-import { PerWindowState } from 'altair-graphql-core/build/types/state/per-window.interfaces';
-import { WindowState } from 'altair-graphql-core/build/types/state/window.interfaces';
+import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
+import { WindowState } from '@jakebarnby/altair-graphql-core/build/types/state/window.interfaces';
 
 export const getInitWindowState = (
   perWindowReducer: ActionReducer<PerWindowState>

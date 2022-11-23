@@ -6,7 +6,7 @@ import {
   EventEmitter,
   ViewChild,
 } from '@angular/core';
-import { AltairConfig } from 'altair-graphql-core/build/config';
+import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 
 import { ContextMenuComponent } from 'ngx-contextmenu';
 

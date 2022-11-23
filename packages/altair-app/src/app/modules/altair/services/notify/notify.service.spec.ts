@@ -6,7 +6,7 @@ import { NotifyService } from './notify.service';
 import { Store } from '@ngrx/store';
 import { of } from 'rxjs';
 import { anyFn, mock } from '../../../../../testing';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 
 let mockToastService: ToastrService;
 let mockStore: Store<RootState>;

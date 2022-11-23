@@ -3,7 +3,7 @@ import { describe, expect, it } from '@jest/globals';
 
 import { QueryCollectionService } from './query-collection.service';
 import { StorageService } from '../storage/storage.service';
-import { IQueryCollection } from 'altair-graphql-core/build/types/state/collection.interfaces';
+import { IQueryCollection } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { ApiService } from '../api/api.service';
 import { AccountService } from '../account/account.service';
 import { MockProvider } from 'ng-mocks';

@@ -19,7 +19,7 @@ import { IntrospectionQuery, buildClientSchema } from 'graphql';
 import validIntrospectionData from './__mock__/valid-introspection-data';
 import { Pos, Token } from 'codemirror';
 import { anyFn } from '../../../../../testing';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { Position } from '../../utils/editor/helpers';
 
 let mockHttpClient: HttpClient;

@@ -1,4 +1,4 @@
-import { StreamState } from 'altair-graphql-core/build/types/state/stream.interfaces';
+import { StreamState } from '@jakebarnby/altair-graphql-core/build/types/state/stream.interfaces';
 import * as stream from './stream.action';
 
 export const getInitialState = (): StreamState => {

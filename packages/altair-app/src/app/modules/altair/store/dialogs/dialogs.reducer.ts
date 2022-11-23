@@ -1,4 +1,4 @@
-import { DialogState } from 'altair-graphql-core/build/types/state/dialog.interfaces';
+import { DialogState } from '@jakebarnby/altair-graphql-core/build/types/state/dialog.interfaces';
 import * as dialogs from '../../store/dialogs/dialogs.action';
 
 export const getInitialState = (): DialogState => {

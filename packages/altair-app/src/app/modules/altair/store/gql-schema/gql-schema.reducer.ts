@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { GQLSchemaState } from 'altair-graphql-core/build/types/state/gql-schema.interfaces';
+import { GQLSchemaState } from '@jakebarnby/altair-graphql-core/build/types/state/gql-schema.interfaces';
 
 import * as gqlSchema from './gql-schema.action';
 

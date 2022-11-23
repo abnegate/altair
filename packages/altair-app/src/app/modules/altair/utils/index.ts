@@ -1,5 +1,5 @@
 import FileSaver from 'file-saver';
-import isElectron from 'altair-graphql-core/build/utils/is_electron';
+import isElectron from '@jakebarnby/altair-graphql-core/build/utils/is_electron';
 import { debug } from './logger';
 import { IDictionary } from '../interfaces/shared';
 import fileDialog from 'file-dialog';

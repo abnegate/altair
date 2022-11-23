@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { DbService } from './db.service';
 import { uaSeedHash } from '../utils/simple_hash';
 import { switchMap, map } from 'rxjs/operators';
-import { AltairConfig } from 'altair-graphql-core/build/config';
+import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 
 @Injectable()
 export class DonationService {

@@ -6,7 +6,7 @@ import { Store } from '@ngrx/store';
 import * as fromRoot from '../../store';
 import { IDictionary } from '../../interfaces/shared';
 import { first, take } from 'rxjs/operators';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { ConfirmToastComponent } from '../../components/confirm-toast/confirm-toast.component';
 
 type NotifyOptions = Partial<IndividualConfig & { data: any }>;

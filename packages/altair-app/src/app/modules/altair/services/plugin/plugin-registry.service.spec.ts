@@ -5,8 +5,8 @@ import { PluginRegistryService } from './plugin-registry.service';
 import { Store } from '@ngrx/store';
 import { mock } from '../../../../../testing';
 import { PluginContextService } from './context/plugin-context.service';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
-import { PluginSource } from 'altair-graphql-core/build/plugin/plugin.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { PluginSource } from '@jakebarnby/altair-graphql-core/build/plugin/plugin.interfaces';
 import { DbService } from '../db.service';
 import { NotifyService } from '../notify/notify.service';
 

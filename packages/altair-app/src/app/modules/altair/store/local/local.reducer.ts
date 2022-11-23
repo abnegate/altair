@@ -1,7 +1,7 @@
 // This would contain arbitrary data that should be stored in memory and not persisted
 
 import * as local from './local.action';
-import { LocalState } from 'altair-graphql-core/build/types/state/local.interfaces';
+import { LocalState } from '@jakebarnby/altair-graphql-core/build/types/state/local.interfaces';
 
 const MAX_CLOSED_WINDOWS_LENGTH = 50;
 

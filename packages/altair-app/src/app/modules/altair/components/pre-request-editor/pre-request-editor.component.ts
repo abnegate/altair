@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-import { PrerequestState } from 'altair-graphql-core/build/types/state/prerequest.interfaces';
+import { PrerequestState } from '@jakebarnby/altair-graphql-core/build/types/state/prerequest.interfaces';
 import { getRequestScriptExtensions } from '../../utils/editor/extensions';
 import { PreRequestService } from '../../services';
 

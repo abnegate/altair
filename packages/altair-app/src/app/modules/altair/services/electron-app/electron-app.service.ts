@@ -17,8 +17,8 @@ import {
 } from '../../store/async-storage-sync';
 import { StorageService } from '../storage/storage.service';
 import { downloadData, isElectronApp } from '../../utils';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
-import { HeaderState } from 'altair-graphql-core/build/types/state/header.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
 
 interface ConnectOptions {
   importFileContent: (content: string) => void;

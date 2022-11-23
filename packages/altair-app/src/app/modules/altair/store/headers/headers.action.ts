@@ -1,5 +1,5 @@
 import { Action as NGRXAction } from '@ngrx/store';
-import { HeaderState } from 'altair-graphql-core/build/types/state/header.interfaces';
+import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
 
 export const ADD_HEADER = 'ADD_HEADER';
 export const REMOVE_HEADER = 'REMOVE_HEADER';

@@ -27,7 +27,7 @@ import {
   ApiService,
 } from '../services';
 import { downloadJson, openFile, openFiles } from '../utils';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { UnknownError } from '../interfaces/shared';
 import { debug } from '../utils/logger';
 

@@ -1,6 +1,6 @@
 import { CompletionContext } from '@codemirror/autocomplete';
 import { syntaxTree } from '@codemirror/language';
-import { IDictionary } from 'altair-graphql-core/build/types/shared';
+import { IDictionary } from '@jakebarnby/altair-graphql-core/build/types/shared';
 
 const completePropertyAfter = ['PropertyName', '.', '?.'];
 const dontCompleteIn = [

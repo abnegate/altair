@@ -13,7 +13,7 @@ import {
 import {
   EnvironmentsState,
   EnvironmentState,
-} from 'altair-graphql-core/build/types/state/environments.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/environments.interfaces';
 import { Extension } from '@codemirror/state';
 import { json, jsonParseLinter } from '@codemirror/lang-json';
 (window as any).jsonlint = (window as any).jsonlint || {

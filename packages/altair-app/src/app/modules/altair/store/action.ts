@@ -1,5 +1,5 @@
 import { Action as NGRXAction } from '@ngrx/store';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 
 export interface ActionWithPayload extends NGRXAction {
   payload?: any;

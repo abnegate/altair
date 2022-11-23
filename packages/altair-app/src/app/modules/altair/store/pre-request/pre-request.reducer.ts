@@ -1,5 +1,5 @@
-import { getAltairConfig } from 'altair-graphql-core/build/config';
-import { PrerequestState } from 'altair-graphql-core/build/types/state/prerequest.interfaces';
+import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { PrerequestState } from '@jakebarnby/altair-graphql-core/build/types/state/prerequest.interfaces';
 import * as preRequest from '../../store/pre-request/pre-request.action';
 
 export const getInitialState = (): PrerequestState => {

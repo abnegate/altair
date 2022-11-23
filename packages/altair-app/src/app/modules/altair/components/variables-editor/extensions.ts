@@ -7,7 +7,7 @@ import { json, jsonLanguage } from '@codemirror/lang-json';
 import { syntaxTree } from '@codemirror/language';
 import { EditorState, StateEffect, StateField } from '@codemirror/state';
 import { EditorView } from '@codemirror/view';
-import { IDictionary } from 'altair-graphql-core/build/types/shared';
+import { IDictionary } from '@jakebarnby/altair-graphql-core/build/types/shared';
 import { GraphQLInputObjectType, GraphQLInputType } from 'graphql';
 
 const variableToTypeEffect =

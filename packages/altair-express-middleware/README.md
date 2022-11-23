@@ -22,7 +22,7 @@ yarn add altair-express-middleware
 ```js
 import express from 'express';
 import { graphqlExpress } from 'graphql-server-express';
-import { altairExpress } from 'altair-express-middleware';
+import { altairExpress } from '@jakebarnby/altair-express-middleware';
 
 import { schema } from './schema';
 

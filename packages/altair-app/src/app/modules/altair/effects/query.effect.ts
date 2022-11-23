@@ -61,10 +61,10 @@ import {
   RequestType,
   ScriptContextData,
 } from '../services/pre-request/pre-request.service';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
-import { PerWindowState } from 'altair-graphql-core/build/types/state/per-window.interfaces';
-import { WEBSOCKET_PROVIDER_ID } from 'altair-graphql-core/build/subscriptions';
-import { SubscriptionProvider } from 'altair-graphql-core/build/subscriptions/subscription-provider';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
+import { WEBSOCKET_PROVIDER_ID } from '@jakebarnby/altair-graphql-core/build/subscriptions';
+import { SubscriptionProvider } from '@jakebarnby/altair-graphql-core/build/subscriptions/subscription-provider';
 import { RequestScriptError } from '../services/pre-request/errors';
 import { headerListToMap } from '../utils/headers';
 

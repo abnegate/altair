@@ -1,5 +1,5 @@
 {
-  "name": "altair",
+  "name": "@jakebarnby/altair",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Samuel Imolorhe <altair@sirmuel.design> (https://sirmuel.design/)",
@@ -36,7 +36,7 @@
     "publish-packages": "lerna bootstrap && yarn lerna-publish",
     "snyk-protect": "snyk protect",
     "start-test-server": "./bin/start_ci_test_server.sh",
-    "start:app": "nx start altair-app",
+    "start:app": "nx start @jakebarnby/altair-app",
     "test:ci-test-only": "nx affected --target=test --parallel=3",
     "test:ci:retries": "yarn test:ci || yarn test:ci || yarn test:ci",
     "test:ci": "start-server-and-test start-test-server http://localhost:5400/test test:ci-test-only",

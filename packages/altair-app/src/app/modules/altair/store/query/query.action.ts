@@ -1,6 +1,6 @@
 import { Action as NGRXAction } from '@ngrx/store';
-import { SubscriptionProvider } from 'altair-graphql-core/build/subscriptions/subscription-provider';
-import { QueryEditorState } from 'altair-graphql-core/build/types/state/query.interfaces';
+import { SubscriptionProvider } from '@jakebarnby/altair-graphql-core/build/subscriptions/subscription-provider';
+import { QueryEditorState } from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
 import { IDictionary } from '../../interfaces/shared';
 
 export const SET_URL = 'SET_URL';

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { SettingsState } from 'altair-graphql-core/build/types/state/settings.interfaces';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { SettingsState } from '@jakebarnby/altair-graphql-core/build/types/state/settings.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import * as settingsActions from '../../store/settings/settings.action';
 import { Observable } from 'rxjs';
 

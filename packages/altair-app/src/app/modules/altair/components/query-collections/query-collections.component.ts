@@ -10,7 +10,7 @@ import {
 import {
   IQueryCollection,
   IQueryCollectionTree,
-} from 'altair-graphql-core/build/types/state/collection.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { QueryCollectionService } from '../../services';
 
 @Component({

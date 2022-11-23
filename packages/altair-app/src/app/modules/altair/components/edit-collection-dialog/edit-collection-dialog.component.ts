@@ -6,9 +6,9 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { IQueryCollection } from 'altair-graphql-core/build/types/state/collection.interfaces';
-import { PostrequestState } from 'altair-graphql-core/build/types/state/postrequest.interfaces';
-import { PrerequestState } from 'altair-graphql-core/build/types/state/prerequest.interfaces';
+import { IQueryCollection } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
+import { PostrequestState } from '@jakebarnby/altair-graphql-core/build/types/state/postrequest.interfaces';
+import { PrerequestState } from '@jakebarnby/altair-graphql-core/build/types/state/prerequest.interfaces';
 
 @Component({
   selector: 'app-edit-collection-dialog',

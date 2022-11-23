@@ -1,5 +1,5 @@
 {
-  "name": "altair-graphql-core",
+  "name": "@jakebarnby/altair-graphql-core",
   "version": "0.1.0",
   "description": "Several of the core logic for altair graphql client",
   "main": "./build/index.js",
@@ -60,5 +60,6 @@
     "subscriptions-transport-ws": "0.9.19",
     "util": "0.12.4",
     "uuid": "8.3.2"
-  }
+  },
+  "gitHead": "c9a4e5acb277f5c14c8b0abced50470187d62538"
 }

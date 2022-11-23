@@ -17,7 +17,7 @@ const deleteFolderRecursive = function(path) {
     fs.rmdirSync(path);
   }
 };
-const altairAppDistFile = require.resolve('altair-app'); // should resolve to <altair-dir>/dist/main.js
+const altairAppDistFile = require.resolve('@jakebarnby/altair-app'); // should resolve to <altair-dir>/dist/main.js
 const distSrc = path.join(altairAppDistFile, '..'); // From the altair-app dist folder
 const distDestination = path.join(__dirname, '../build/dist'); // To altair-static dist folder
 deleteFolderRecursive(distDestination);

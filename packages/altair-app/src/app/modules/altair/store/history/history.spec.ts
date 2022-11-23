@@ -5,9 +5,9 @@ import {
   CLEAR_HISTORY,
   ClearHistoryAction,
 } from './history.action';
-import { HistoryState } from 'altair-graphql-core/build/types/state/history.interfaces';
+import { HistoryState } from '@jakebarnby/altair-graphql-core/build/types/state/history.interfaces';
 
-jest.mock('altair-graphql-core/build/config', () => {
+jest.mock('@jakebarnby/altair-graphql-core/build/config', () => {
   return {
     getAltairConfig() {
       return {

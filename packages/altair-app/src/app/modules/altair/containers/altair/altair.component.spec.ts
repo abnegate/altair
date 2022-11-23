@@ -16,7 +16,7 @@ import { NgxTestWrapper } from '../../../../../testing/wrapper';
 import { mount } from '../../../../../testing/utils';
 import { mockStoreFactory, mock } from '../../../../../testing';
 import { MockModule } from 'ng-mocks';
-import { AltairConfig } from 'altair-graphql-core/build/config';
+import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 
 describe('AltairComponent', () => {
   let wrapper: NgxTestWrapper<AltairComponent>;

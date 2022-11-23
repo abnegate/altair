@@ -1,4 +1,4 @@
-import { HeaderState } from 'altair-graphql-core/build/types/state/header.interfaces';
+import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
 import { IDictionary } from '../interfaces/shared';
 
 export const headerListToMap = (headers: HeaderState): IDictionary => {

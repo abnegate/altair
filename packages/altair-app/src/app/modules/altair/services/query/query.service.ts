@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import * as fromRoot from '../../store';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { debug } from '../../utils/logger';
 import { EnvironmentService } from '../environment/environment.service';
 import { SendRequestResponse } from '../gql/gql.service';
@@ -13,7 +13,7 @@ import {
 } from '../pre-request/pre-request.service';
 import { take } from 'rxjs/operators';
 import { QueryCollectionService } from '../query-collection/query-collection.service';
-import { PerWindowState } from 'altair-graphql-core/build/types/state/per-window.interfaces';
+import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
 
 @Injectable({
   providedIn: 'root',

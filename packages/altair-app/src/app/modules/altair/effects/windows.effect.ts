@@ -12,7 +12,7 @@ import * as localActions from '../store/local/local.action';
 import { WindowService } from '../services/window.service';
 
 import { downloadJson, openFile } from '../utils';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 
 @Injectable()
 export class WindowsEffects {

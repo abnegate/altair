@@ -18,7 +18,7 @@ yarn add altair-fastify-plugin
 // const Fastify = require("fastify");
 import Fastify from 'fastify';
 // const AltairFastify = require("altair-fastify-plugin");
-import AltairFastify from 'altair-fastify-plugin';
+import AltairFastify from '@jakebarnby/altair-fastify-plugin';
 
 const app = Fastify();
 

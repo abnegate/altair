@@ -5,17 +5,17 @@ import {
   CreatePanelOptions,
   PluginContextGenerator,
   PluginWindowState,
-} from 'altair-graphql-core/build/plugin/context/context.interface';
-import isElectron from 'altair-graphql-core/build/utils/is_electron';
+} from '@jakebarnby/altair-graphql-core/build/plugin/context/context.interface';
+import isElectron from '@jakebarnby/altair-graphql-core/build/utils/is_electron';
 import {
   PluginEvent,
   PluginEventCallback,
-} from 'altair-graphql-core/build/plugin/event/event.interfaces';
-import { ICustomTheme } from 'altair-graphql-core/build/theme';
-import { ExportWindowState } from 'altair-graphql-core/build/types/state/window.interfaces';
-import { SubscriptionProviderData } from 'altair-graphql-core/build/subscriptions';
-import { AltairPlugin } from 'altair-graphql-core/build/plugin/plugin.interfaces';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/plugin/event/event.interfaces';
+import { ICustomTheme } from '@jakebarnby/altair-graphql-core/build/theme';
+import { ExportWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/window.interfaces';
+import { SubscriptionProviderData } from '@jakebarnby/altair-graphql-core/build/subscriptions';
+import { AltairPlugin } from '@jakebarnby/altair-graphql-core/build/plugin/plugin.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { debug } from '../../../utils/logger';
 
 import { WindowService } from '../../../services/window.service';
@@ -35,11 +35,11 @@ import { SubscriptionProviderRegistryService } from '../../subscriptions/subscri
 import {
   AltairPanel,
   AltairPanelLocation,
-} from 'altair-graphql-core/build/plugin/panel';
+} from '@jakebarnby/altair-graphql-core/build/plugin/panel';
 import {
   AltairUiAction,
   AltairUiActionLocation,
-} from 'altair-graphql-core/build/plugin/ui-action';
+} from '@jakebarnby/altair-graphql-core/build/plugin/ui-action';
 
 @Injectable({
   providedIn: 'root',

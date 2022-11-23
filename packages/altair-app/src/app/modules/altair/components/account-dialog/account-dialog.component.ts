@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AccountState } from 'altair-graphql-core/build/types/state/account.interfaces';
+import { AccountState } from '@jakebarnby/altair-graphql-core/build/types/state/account.interfaces';
 
 @Component({
   selector: 'app-account-dialog',

@@ -9,7 +9,7 @@ import {
 import {
   IQueryCollection,
   IQueryCollectionTree,
-} from 'altair-graphql-core/build/types/state/collection.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { NzTreeNodeOptions } from 'ng-zorro-antd/tree';
 import { Observable } from 'rxjs';
 import { QueryCollectionService } from '../../services';

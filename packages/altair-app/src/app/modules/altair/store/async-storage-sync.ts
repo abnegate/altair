@@ -13,8 +13,8 @@ import { IDictionary } from '../interfaces/shared';
 import { debug } from '../utils/logger';
 import { localStorageSyncConfig } from './local-storage-sync-config';
 import { set } from 'object-path';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
-import { getAltairConfig } from 'altair-graphql-core/build/config';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 
 type StateKey = keyof RootState;
 

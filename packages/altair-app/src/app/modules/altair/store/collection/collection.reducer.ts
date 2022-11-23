@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { CollectionState } from 'altair-graphql-core/build/types/state/collection.interfaces';
+import { CollectionState } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 
 import * as collectionActions from '../../store/collection/collection.action';
 

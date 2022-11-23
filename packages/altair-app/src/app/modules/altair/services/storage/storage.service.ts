@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IQueryCollection } from 'altair-graphql-core/build/types/state/collection.interfaces';
+import { IQueryCollection } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import Dexie from 'dexie';
 
 interface ISelectedFile {

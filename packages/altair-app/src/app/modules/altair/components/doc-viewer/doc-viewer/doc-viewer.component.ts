@@ -24,8 +24,8 @@ import { fadeInOutAnimationTrigger } from '../../../animations';
 import * as Comlink from 'comlink';
 import { GqlService } from '../../../services';
 import getRootTypes from '../../../utils/get-root-types';
-import { DocView } from 'altair-graphql-core/build/types/state/docs.interfaces';
-import { AltairConfig } from 'altair-graphql-core/build/config';
+import { DocView } from '@jakebarnby/altair-graphql-core/build/types/state/docs.interfaces';
+import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 import { getDocUtilsWorkerAsyncClass } from './worker-helper';
 import marked from 'marked';
 

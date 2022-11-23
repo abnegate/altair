@@ -5,7 +5,7 @@ import { DocViewerComponent } from './doc-viewer.component';
 import { DocViewerModule } from '../doc-viewer.module';
 import { Mock } from 'ts-mocks';
 import { GqlService } from '../../../services';
-import { AltairConfig } from 'altair-graphql-core/build/config';
+import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 
 let mockGqlService: Mock<GqlService>;
 

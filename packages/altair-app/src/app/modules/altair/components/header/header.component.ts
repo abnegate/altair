@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { AltairPanel } from 'altair-graphql-core/build/plugin/panel';
+import { AltairPanel } from '@jakebarnby/altair-graphql-core/build/plugin/panel';
 import {
   EnvironmentsState,
   EnvironmentState,
-} from 'altair-graphql-core/build/types/state/environments.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/environments.interfaces';
 import { externalLink } from '../../utils';
 
 @Component({

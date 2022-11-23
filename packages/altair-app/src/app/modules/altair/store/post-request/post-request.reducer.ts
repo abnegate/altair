@@ -1,5 +1,5 @@
-import { getAltairConfig } from 'altair-graphql-core/build/config';
-import { PostrequestState } from 'altair-graphql-core/build/types/state/postrequest.interfaces';
+import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { PostrequestState } from '@jakebarnby/altair-graphql-core/build/types/state/postrequest.interfaces';
 import * as postRequest from '../post-request/post-request.action';
 
 export const getInitialState = (): PostrequestState => {

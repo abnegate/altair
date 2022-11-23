@@ -5,7 +5,7 @@ import {
   EventEmitter,
   ChangeDetectionStrategy,
 } from '@angular/core';
-import { AltairConfig } from 'altair-graphql-core/build/config';
+import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 
 @Component({
   selector: 'app-schema-form-item',

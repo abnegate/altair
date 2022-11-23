@@ -9,7 +9,7 @@ import {
   IQuery,
   IQueryCollection,
   IQueryCollectionTree,
-} from 'altair-graphql-core/build/types/state/collection.interfaces';
+} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { memoize } from '../../utils/memoize';
 
 type SortByOptions = 'a-z' | 'z-a' | 'newest' | 'oldest';

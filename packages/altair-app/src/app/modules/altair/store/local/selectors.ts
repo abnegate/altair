@@ -1,7 +1,7 @@
 import { createSelector } from '@ngrx/store';
-import { AltairPanelLocation } from 'altair-graphql-core/build/plugin/panel';
-import { AltairUiActionLocation } from 'altair-graphql-core/build/plugin/ui-action';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { AltairPanelLocation } from '@jakebarnby/altair-graphql-core/build/plugin/panel';
+import { AltairUiActionLocation } from '@jakebarnby/altair-graphql-core/build/plugin/ui-action';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 
 export const getLocalState = (state: RootState) => state.local;
 export const getPanels = createSelector(getLocalState, (local) => local.panels);

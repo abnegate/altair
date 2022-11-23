@@ -1,5 +1,5 @@
 import { Action as NGRXAction } from '@ngrx/store';
-import { SettingsState } from 'altair-graphql-core/build/types/state/settings.interfaces';
+import { SettingsState } from '@jakebarnby/altair-graphql-core/build/types/state/settings.interfaces';
 
 export const SET_SETTINGS_JSON = 'SET_SETTINGS_JSON';
 export const UPDATE_SETTINGS = 'UPDATE_SETTINGS';

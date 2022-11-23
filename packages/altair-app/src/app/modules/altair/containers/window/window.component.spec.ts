@@ -7,7 +7,7 @@ import * as services from './../../services';
 import { WindowComponent } from './window.component';
 import { mock, anyFn, mockStoreFactory } from '../../../../../testing';
 import { TranslateModule } from '@ngx-translate/core';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { ClearResultAction } from '../../store/query/query.action';
 import { getInitWindowState } from '../../store/windows/windows.reducer';
 import { getPerWindowReducer } from '../../store';

@@ -1,5 +1,5 @@
 {
-  "name": "altair-static",
+  "name": "@jakebarnby/altair-static",
   "version": "0.1.0",
   "description": "Static package for altair graphql client",
   "main": "./build/index.js",
@@ -9,7 +9,7 @@
     "prepare-dist": "node scripts/prepare_dist.js",
     "compile": "node scripts/build.js",
     "prepare": "yarn prepare-dist && yarn compile && yarn types",
-    "types": "dts-bundle-generator src/index.ts -o build/index.d.ts --external-inlines altair-graphql-core --external-inlines altair-static"
+    "types": "dts-bundle-generator src/index.ts -o build/index.d.ts --external-inlines @jakebarnby/altair-graphql-core --external-inlines @jakebarnby/altair-static"
   },
   "engines": {
     "node": ">= 6.9.1"
@@ -31,8 +31,8 @@
   "homepage": "https://github.com/altair-graphql/altair#readme",
   "devDependencies": {
     "@types/jest": "^24.0.23",
-    "altair-app": "^0.1.0",
-    "altair-graphql-core": "^0.1.0",
+    "@jakebarnby/altair-app": "^0.1.0",
+    "@jakebarnby/altair-graphql-core": "^0.1.0",
     "dts-bundle-generator": "^6.11.0",
     "esbuild": "^0.14.43",
     "jest": "28.0.0",

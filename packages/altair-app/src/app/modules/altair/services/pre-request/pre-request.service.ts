@@ -12,8 +12,8 @@ import { getActiveSubEnvironmentState } from '../../store/environments/selectors
 import { NotifyService } from '../notify/notify.service';
 import { first, take } from 'rxjs/operators';
 import { SendRequestResponse } from '../gql/gql.service';
-import { HeaderState } from 'altair-graphql-core/build/types/state/header.interfaces';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { RequestScriptError } from './errors';
 
 export enum RequestType {

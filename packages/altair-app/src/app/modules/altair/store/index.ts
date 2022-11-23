@@ -31,7 +31,7 @@ import * as fromAccount from './account/account.reducer';
 import { debug } from '../utils/logger';
 import { asyncStorageSync } from './async-storage-sync';
 import { localStorageSyncConfig } from './local-storage-sync-config';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 
 export const getPerWindowReducer = () => {
   const perWindowReducers = {

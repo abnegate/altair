@@ -26,8 +26,8 @@ import { getFileStr, mapToKeyValueList } from '../utils';
 import { parseCurlToObj } from '../utils/curl';
 import { debug } from '../utils/logger';
 import { GqlService } from './gql/gql.service';
-import { RootState } from 'altair-graphql-core/build/types/state/state.interfaces';
-import { ExportWindowState } from 'altair-graphql-core/build/types/state/window.interfaces';
+import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { ExportWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/window.interfaces';
 import { QueryCollectionService } from './query-collection/query-collection.service';
 
 interface ImportWindowDataOptions {
