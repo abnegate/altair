@@ -81,6 +81,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/altair"
   },
-  "snyk": true,
-  "private": true
+  "snyk": true
 }

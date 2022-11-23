@@ -6,7 +6,6 @@
   "main": "dist/index.js",
   "author": "Samuel Imolorhe <altair@sirmuel.design> (https://sirmuel.design/)",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "test": "yarn test:unit",
     "test:unit": "jest",
