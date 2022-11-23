@@ -1,6 +1,6 @@
 {
   "name": "@jakebarnby/prettier-config-altair",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "index.js",
   "license": "MIT",
   "gitHead": "91a80157fa4fa2389ba8f40c6ac0d77106b8981e"
