@@ -1,0 +1,85 @@
+{
+  "name": "@jakebarnby/altair",
+  "version": "0.1.5",
+  "license": "MIT",
+  "author": "Samuel Imolorhe <altair@sirmuel.design> (https://sirmuel.design/)",
+  "description": "The best graphQL client you will ever need",
+  "homepage": "https://altair-graphql.github.io/altair/",
+  "keywords": [
+    "graphql",
+    "altair",
+    "wysiwyg",
+    "editor",
+    "client"
+  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "libs/*",
+      "functions"
+    ]
+  },
+  "scripts": {
+    "build-app": "nx build altair-app",
+    "build-docs": "yarn --cwd site/src/.vuepress/plugins/github-metadata install && yarn --cwd site install && yarn --cwd site build",
+    "build-electron": "lerna bootstrap && nx build altair",
+    "build-ext": "yarn build-app && ./bin/chrome_ext.sh",
+    "build-ext2": "yarn build-app && cwex build",
+    "build:ci": "lerna bootstrap -- --frozen-lockfile",
+    "deploy:rules": "firebase deploy --only firestore:rules",
+    "deploy:functions": "firebase deploy --only functions",
+    "emulators:start": "firebase emulators:start",
+    "lerna-publish": "lerna publish from-git --force-publish=* --yes",
+    "local-verify": "yarn build-app && lerna bootstrap",
+    "postinstall": "opencollective postinstall",
+    "prepare": "nx run-many --target=prepare --all --output-style=stream",
+    "publish-packages": "lerna bootstrap && yarn lerna-publish",
+    "snyk-protect": "snyk protect",
+    "start-test-server": "./bin/start_ci_test_server.sh",
+    "start:app": "nx start @jakebarnby/altair-app",
+    "test:ci-test-only": "nx affected --target=test --parallel=3",
+    "test:ci:retries": "yarn test:ci || yarn test:ci || yarn test:ci",
+    "test:ci": "start-server-and-test start-test-server http://localhost:5400/test test:ci-test-only",
+    "test": "nx run-many --target=test --all"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.18.1",
+    "chalk": "^4.1.0",
+    "compare-versions": "^4.1.3",
+    "cwex": "^1.0.2",
+    "execa": "^5.0.0",
+    "inquirer": "^7.3.3",
+    "lerna": "^4.0.0",
+    "ng-packagr": "^13.0.8",
+    "nx": "14.1.5",
+    "opencollective": "^1.0.3",
+    "snyk": "^1.774.0",
+    "start-server-and-test": "1.11.0",
+    "typescript": "^4.7.4",
+    "web-ext": "^6.5.0",
+    "wrangler": "^2.0.27"
+  },
+  "resolutions": {
+    "y18n": "4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altair-graphql/altair.git"
+  },
+  "bugs": {
+    "url": "https://github.com/altair-graphql/altair/issues"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/altair",
+    "logo": "https://opencollective.com/altair/logo.txt"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/altair"
+  },
+  "snyk": true
+}

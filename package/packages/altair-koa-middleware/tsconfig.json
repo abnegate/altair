@@ -1,0 +1,20 @@
+{
+  "exclude": [
+    "example/**",
+    "build/**/*.d.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "build/",
+    "rootDir": "./",
+    "declaration": true,
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "types": [
+      "node"
+    ]
+  }
+}

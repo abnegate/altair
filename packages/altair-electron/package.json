@@ -1,7 +1,7 @@
 {
   "name": "@jakebarnby/altair",
   "productName": "Altair GraphQL Client",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Electron wrapper for Altair",
   "main": "dist/index.js",
   "author": "Samuel Imolorhe <altair@sirmuel.design> (https://sirmuel.design/)",
@@ -17,7 +17,7 @@
     "prepare": "yarn compile && yarn --cwd static/auth install"
   },
   "dependencies": {
-    "@jakebarnby/altair-static": "^0.1.5",
+    "@jakebarnby/altair-static": "^0.1.6",
     "body-parser": "^1.20.0",
     "csp-header": "^5.1.0",
     "electron-debug": "^3.0.1",
@@ -72,5 +72,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/altair"
   },
-  "gitHead": "e5ce60f5a14997f1471a961ac76efacbb044df46"
+  "gitHead": "a97d9545be11df1a5188c019ba3a7422e1d52a3b"
 }

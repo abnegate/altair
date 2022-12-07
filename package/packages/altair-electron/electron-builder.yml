@@ -1,0 +1,73 @@
+appId: com.xkoji.altair
+productName: Altair GraphQL Client
+directories:
+  buildResources: resources
+  output: out
+files:
+  - "**/*"
+afterSign: electron-builder-notarize # scripts/notarize.js
+mac:
+  artifactName: ${name}_${version}_${arch}_${os}.${ext}
+  category: public.app-category.developer-tools
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: zip
+      arch:
+        - x64
+        - arm64
+  icon: resources/mac_icon.icns
+  hardenedRuntime: true
+  entitlements: resources/entitlements.mac.plist
+  entitlementsInherit: resources/entitlements.mac.plist
+  # gatekeeperAssess: false
+dmg:
+  icon: resources/icon.png
+linux:
+  artifactName: ${name}_${version}_${arch}_linux.${ext}
+  icon: resources/icons
+  target:
+    - AppImage
+    - deb
+    - snap
+appImage:
+  category: Development
+snap:
+  publish:
+    - provider: github
+      releaseType: release
+    - provider: snapStore
+      channels: stable
+  layout:
+    /usr/share/libdrm:
+      bind: $SNAP/usr/share/libdrm
+win:
+  artifactName: ${name}_${version}_${arch}_win.${ext}
+electronCompile: false
+protocols:
+  name: Altair GraphQL Client
+  schemes:
+    - altair
+  role: Viewer
+artifactName: ${name}_${version}_${arch}_${os}.${ext}
+publish:
+  provider: github
+  releaseType: release
+fileAssociations:
+  - ext: graphql
+    description: GraphQL File
+    role: Viewer
+  - ext: gql
+    description: GraphQL File
+    role: Viewer
+  - ext: agq
+    description: Altair GraphQL Query
+    role: Viewer
+  - ext: agc
+    description: Altair GraphQL Collection
+    role: Viewer
+  - ext: agbkp
+    description: Altair GraphQL Backup
+    role: Viewer

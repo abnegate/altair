@@ -1,0 +1,127 @@
+name: pr-workflow
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+# v*.*.*
+
+jobs:
+  deploy-docs:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.1
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+      - run: yarn build-docs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          NODE_OPTIONS: "--max_old_space_size=4096" # Getting Javascript heap out of memory error. Increasing heap size
+      # https://developers.cloudflare.com/pages/how-to/use-direct-upload-with-continuous-integration/#use-github-actions
+      - name: Publish to cloudflare pages ✨
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: altair-site
+          directory: site/src/.vuepress/dist
+          gitHubToken: ${{ github.token }}
+  test:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+        node-version: [16]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - uses: nrwl/nx-set-shas@v2
+      with:
+        main-branch-name: master
+    - name: restore lerna
+      uses: actions/cache@v2
+      with:
+        path: |
+          node_modules
+          */*/node_modules
+        key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+    - run: yarn --frozen-lockfile --network-timeout 1000000
+    - uses: browser-actions/setup-chrome@latest
+    - name: Build apps (with retries)
+      uses: nick-invision/retry@v2
+      with:
+        timeout_minutes: 15
+        max_attempts: 3
+        command: yarn build:ci
+    - name: Run headless test
+      uses: GabrielBB/xvfb-action@v1
+      with:
+        run: yarn test:ci:retries
+        # run: |
+        #   (echo "===== Headless Tests Attempt: 1 ====" && yarn test:ci) || \
+        #   (echo "===== Headless Tests Attempt: 2 ====" && yarn test:ci) || \
+        #   (echo "===== Headless Tests Attempt: 3 ====" && yarn test:ci) || \
+        #   (echo "==== Headless Tests Step Failed ====" && exit 1)
+    # https://github.com/tanshuai/electron-playwright-e2e-test-quick-start/blob/1e2c653bc2d0af85d98de1c58e56a888f17fe671/.github/workflows/ci.yml#L39-L44
+    - name: Upload Test Results 🗃
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: screenshots
+        path: packages/altair-electron/e2e/*.png
+  electron:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        node-version: [16]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: yarn --frozen-lockfile --network-timeout 1000000
+    - uses: nick-invision/retry@v2
+      with:
+        timeout_minutes: 20
+        max_attempts: 3
+        command: yarn lerna bootstrap
+    - name: Prepare for app notarization
+      if: startsWith(matrix.os, 'macos')
+      # Import Apple API key for app notarization on macOS
+      run: |
+        mkdir -p ~/private_keys/
+        echo '${{ secrets.apple_api_key }}' > ~/private_keys/AuthKey_${{ secrets.apple_api_key_id }}.p8
+    - name: Build/release Electron app
+      uses: CryogenicPlanet/action-electron-builder@v2 # Using CryogenicPlanet until the main action adds skip_install
+      with:
+        github_token: ${{ secrets.github_token }}
+        package_root: packages/altair-electron/
+        skip_build: true
+        skip_install: true
+        mac_certs: ${{ secrets.mac_certs }}
+        mac_certs_password: ${{ secrets.mac_certs_password }}
+        args: '--publish never' # Don't publish with this job since it is not in a release (more like a pre-release)
+        max_attempts: 3
+      env:
+        # macOS notarization API key
+        API_KEY_ID: ${{ secrets.apple_api_key_id }}
+        API_KEY_ISSUER_ID: ${{ secrets.apple_api_key_issuer_id }}
+    - name: Upload electron builds
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: electron-builds
+        path: packages/altair-electron/out/**
+

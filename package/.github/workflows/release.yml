@@ -1,0 +1,121 @@
+name: Release
+
+on:
+  push:
+    tags:
+    - '**'
+  workflow_dispatch:
+
+# TODO: Handle browser extension release
+jobs:
+  prepare-release:
+    name: Prepare release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: release-draft
+        uses: softprops/action-gh-release@v1
+        with:
+          token: ${{ secrets.github_token }}
+          prerelease: false
+          draft: true
+          generate_release_notes: true
+    outputs:
+      release-tag: ${{ steps.release-draft.outputs.id }}
+
+  electron:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        node-version: [16]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: yarn --frozen-lockfile --network-timeout 1000000
+    - uses: nick-invision/retry@v2
+      with:
+        timeout_minutes: 20
+        max_attempts: 3
+        command: yarn lerna bootstrap
+    - name: Install Snapcraft
+      uses: samuelmeuli/action-snapcraft@v1
+      if: startsWith(matrix.os, 'ubuntu')
+      with:
+        snapcraft_token: ${{ secrets.snap_store_login }}
+    - name: Prepare for app notarization
+      if: startsWith(matrix.os, 'macos')
+      # Import Apple API key for app notarization on macOS
+      run: |
+        mkdir -p ~/private_keys/
+        echo '${{ secrets.apple_api_key }}' > ~/private_keys/AuthKey_${{ secrets.apple_api_key_id }}.p8
+    - name: Build/release Electron app
+      uses: CryogenicPlanet/action-electron-builder@v2 # Using CryogenicPlanet until the main action adds skip_install
+      with:
+        github_token: ${{ secrets.github_token }}
+        package_root: packages/altair-electron/
+        skip_build: true
+        skip_install: true
+        mac_certs: ${{ secrets.mac_certs }}
+        mac_certs_password: ${{ secrets.mac_certs_password }}
+        args: '--publish always'
+        max_attempts: 3
+      env:
+        # macOS notarization API key
+        API_KEY_ID: ${{ secrets.apple_api_key_id }}
+        API_KEY_ISSUER_ID: ${{ secrets.apple_api_key_issuer_id }}
+
+    # chocolatey
+    - name: Read VERSION file
+      id: getversion
+      run: echo "::set-output name=version::$(cat VERSION)"
+    - name: Add mask
+      run: |
+        echo "::add-mask::${{ secrets.CHOCOLATEY_API_KEY }}"
+    - name: chocolatey pack
+      if: startsWith(matrix.os, 'windows')
+      uses: crazy-max/ghaction-chocolatey@v1.6.0
+      with:
+        args: pack chocolatey\altair-graphql.nuspec
+    - name: chocolatey install (test choco packaging)
+      if: startsWith(matrix.os, 'windows')
+      uses: crazy-max/ghaction-chocolatey@v1.6.0
+      with:
+        args: install altair-graphql.${{ steps.getversion.outputs.version }}.nupkg
+    - name: chocolatey push
+      if: startsWith(matrix.os, 'windows')
+      uses: crazy-max/ghaction-chocolatey@v1.6.0
+      with:
+        args: push altair-graphql.${{ steps.getversion.outputs.version }}.nupkg -s https://push.chocolatey.org/ -k="'${{ secrets.CHOCOLATEY_API_KEY }}'"
+
+  npm-publish:
+    runs-on: ubuntu-latest
+    needs: electron
+    steps:
+    - uses: actions/checkout@v2
+    - name: Authenticate with Registry
+      run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+      env:
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - run: yarn --frozen-lockfile
+    - uses: nick-invision/retry@v2
+      with:
+        timeout_minutes: 15
+        max_attempts: 3
+        command: yarn build:ci
+    - run: yarn lerna publish from-git --force-publish=* --no-git-tag-version --no-push --yes
+  
+  publish-release:
+    name: Publish release
+    runs-on: ubuntu-latest
+    needs: [prepare-release, electron]
+    steps:
+      - uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{ needs.prepare-release.outputs.release-tag }}
+  

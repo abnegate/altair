@@ -1,0 +1,22 @@
+<div class="request-script-editor">
+  <div class="request-script-editor__toggle-wrapper spacer--small">
+    <label
+      nz-checkbox
+      [ngModel]="postRequest?.enabled"
+      (ngModelChange)="postRequestEnabledChange.next($event)"
+    >{{ 'REQUEST_SCRIPT_ENABLE_TEXT' | translate }}</label>
+  </div>
+  <app-codemirror
+    [extensions]="editorExtensions"
+    [fullHeight]="true"
+    [ngModel]="postRequest.script"
+    (ngModelChange)="postRequestScriptChange.emit($event)"
+  ></app-codemirror>
+  
+  <small>
+    <a href="https://altairgraphql.dev/docs/features/prerequest-scripts.html" target="_blank" aria-label="learn more">
+      <app-icon name="info"></app-icon>
+      {{ 'LEARN_MORE_TEXT' | translate }}
+    </a>
+  </small>
+</div>
