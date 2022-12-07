@@ -12,7 +12,6 @@ import {
 } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { memoize } from '../../utils/memoize';
 
-type SortByOptions = 'a-z' | 'z-a' | 'newest' | 'oldest';
 @Component({
   selector: 'app-query-collection-item',
   templateUrl: './query-collection-item.component.html',

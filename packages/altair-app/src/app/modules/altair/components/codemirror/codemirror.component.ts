@@ -18,7 +18,13 @@ import {
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { EditorState, Extension, Prec, StateEffect } from '@codemirror/state';
-import { EditorView, keymap, lineNumbers, ViewUpdate } from '@codemirror/view';
+import {
+  drawSelection,
+  EditorView,
+  keymap,
+  lineNumbers,
+  ViewUpdate,
+} from '@codemirror/view';
 import {
   defaultKeymap,
   history,
@@ -37,6 +43,7 @@ import {
   HighlightStyle,
   foldGutter,
   bracketMatching,
+  foldKeymap,
 } from '@codemirror/language';
 
 import { tags as t } from '@lezer/highlight';
@@ -270,6 +277,9 @@ export class CodemirrorComponent
         borderRadius: '2px',
         marginBottom: '5px',
       },
+      '.cm-cursor': {
+        borderColor: 'var(--theme-font-color)',
+      },
     });
     // https://github.com/codemirror/theme-one-dark/blob/848ca1e82addf4892afc895e013754805af6182a/src/one-dark.ts#L96
     const defaultHighlightStyle = HighlightStyle.define([
@@ -347,12 +357,15 @@ export class CodemirrorComponent
           ...completionKeymap,
           ...closeBracketsKeymap,
           ...searchKeymap,
+          ...foldKeymap,
           indentWithTab,
         ])
       ),
       this.showLineNumber ? lineNumbers() : [], // TODO: Create own compartment
       this.foldGutter ? foldGutter() : [], // TODO: Create own compartment
       this.wrapLines ? EditorView.lineWrapping : [], // TODO: Create own compartment
+      drawSelection(),
+      EditorState.allowMultipleSelections.of(true),
       bracketMatching(),
       closeBrackets(),
       history(),
