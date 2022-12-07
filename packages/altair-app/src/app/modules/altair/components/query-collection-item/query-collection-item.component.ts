@@ -9,6 +9,7 @@ import {
   IQuery,
   IQueryCollection,
   IQueryCollectionTree,
+  SortByOptions,
 } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import { memoize } from '../../utils/memoize';
 
