@@ -5,7 +5,7 @@ import {
   EventEmitter,
   ChangeDetectionStrategy,
 } from '@angular/core';
-import { SortByOptions } from 'altair-graphql-core/build/types/state/collection.interfaces';
+import { SortByOptions } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 import {
   GraphQLSchema,
   GraphQLType,

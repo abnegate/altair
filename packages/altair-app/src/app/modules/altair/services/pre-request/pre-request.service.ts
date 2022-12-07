@@ -15,7 +15,7 @@ import { SendRequestResponse } from '../gql/gql.service';
 import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
 import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
 import { RequestScriptError } from './errors';
-import { LogLine } from 'altair-graphql-core/build/types/state/query.interfaces';
+import { LogLine } from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
 
 export enum RequestType {
   INTROSPECTION = 'introspection',

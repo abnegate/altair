@@ -28,7 +28,7 @@ import { DocView } from '@jakebarnby/altair-graphql-core/build/types/state/docs.
 import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
 import { getDocUtilsWorkerAsyncClass } from './worker-helper';
 import marked from 'marked';
-import { SortByOptions } from 'altair-graphql-core/build/types/state/collection.interfaces';
+import { SortByOptions } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
 
 @UntilDestroy()
 @Component({
