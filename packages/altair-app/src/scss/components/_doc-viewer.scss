@@ -250,7 +250,7 @@ app-doc-viewer {
 
   &.cat-type {
     background: rgba(var(--rgb-green), .05);
-    color: var(--green-color);
+    color: var(--pink-color);
   }
 
   &.cat-field {
@@ -322,7 +322,7 @@ app-doc-viewer {
     width: 5px;
     height: 5px;
     border-radius: 2px;
-    background-color: var(--green-color);
+    background-color: var(--pink-color);
     vertical-align: middle;
   }
 }
@@ -332,7 +332,7 @@ app-doc-viewer {
 }
 
 .doc-viewer-item-type {
-  color: var(--green-color);
+  color: var(--pink-color);
   font-size: fontsize(13);
   text-decoration: underline;
 }

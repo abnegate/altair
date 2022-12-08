@@ -56,6 +56,7 @@ export class ThemeDirective implements OnInit, OnChanges {
       --light-grey-color: ${theme.colors.lightGray};
       --white-color: ${theme.colors.white};
       --green-color: ${theme.colors.green};
+      --pink-color: ${theme.colors.pink};
       --blue-color: ${theme.colors.blue};
       --cerise-color: ${theme.colors.cerise};
       --red-color: ${theme.colors.red};
