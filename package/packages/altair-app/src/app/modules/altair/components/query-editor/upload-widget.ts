@@ -8,15 +8,15 @@ import {
 } from '@codemirror/view';
 import { syntaxTree } from '@codemirror/language';
 import { EditorState, Range, StateEffect, StateField } from '@codemirror/state';
-import { getSchema } from '@jakebarnby/altair-codemirror-graphql';
+import { getSchema } from '@appwrite.io/altair-codemirror-graphql';
 import { cleanTypeName } from '../../services/gql/helpers';
 import { GraphQLScalarType } from 'graphql';
 import {
   FileVariable,
   VariableState,
-} from '@jakebarnby/altair-graphql-core/build/types/state/variable.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/types/state/variable.interfaces';
 import { Store } from '@ngrx/store';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
 import { Subscription } from 'rxjs';
 import { tap } from 'rxjs/operators';
 

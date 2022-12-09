@@ -5,17 +5,17 @@ import {
   CreatePanelOptions,
   PluginContextGenerator,
   PluginWindowState,
-} from '@jakebarnby/altair-graphql-core/build/plugin/context/context.interface';
-import isElectron from '@jakebarnby/altair-graphql-core/build/utils/is_electron';
+} from '@appwrite.io/altair-graphql-core/build/plugin/context/context.interface';
+import isElectron from '@appwrite.io/altair-graphql-core/build/utils/is_electron';
 import {
   PluginEvent,
   PluginEventCallback,
-} from '@jakebarnby/altair-graphql-core/build/plugin/event/event.interfaces';
-import { ICustomTheme } from '@jakebarnby/altair-graphql-core/build/theme';
-import { ExportWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/window.interfaces';
-import { SubscriptionProviderData } from '@jakebarnby/altair-graphql-core/build/subscriptions';
-import { AltairPlugin } from '@jakebarnby/altair-graphql-core/build/plugin/plugin.interfaces';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/plugin/event/event.interfaces';
+import { ICustomTheme } from '@appwrite.io/altair-graphql-core/build/theme';
+import { ExportWindowState } from '@appwrite.io/altair-graphql-core/build/types/state/window.interfaces';
+import { SubscriptionProviderData } from '@appwrite.io/altair-graphql-core/build/subscriptions';
+import { AltairPlugin } from '@appwrite.io/altair-graphql-core/build/plugin/plugin.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
 import { debug } from '../../../utils/logger';
 
 import { WindowService } from '../../../services/window.service';
@@ -35,11 +35,11 @@ import { SubscriptionProviderRegistryService } from '../../subscriptions/subscri
 import {
   AltairPanel,
   AltairPanelLocation,
-} from '@jakebarnby/altair-graphql-core/build/plugin/panel';
+} from '@appwrite.io/altair-graphql-core/build/plugin/panel';
 import {
   AltairUiAction,
   AltairUiActionLocation,
-} from '@jakebarnby/altair-graphql-core/build/plugin/ui-action';
+} from '@appwrite.io/altair-graphql-core/build/plugin/ui-action';
 
 @Injectable({
   providedIn: 'root',

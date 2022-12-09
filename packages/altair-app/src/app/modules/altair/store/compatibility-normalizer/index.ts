@@ -1,4 +1,4 @@
-import { WindowState } from '@jakebarnby/altair-graphql-core/build/types/state/window.interfaces';
+import { WindowState } from '@appwrite.io/altair-graphql-core/build/types/state/window.interfaces';
 
 export function normalize(state: WindowState) {
   return Object.keys(state)

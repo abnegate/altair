@@ -16,7 +16,7 @@ import {
   IQuery,
   IRemoteQuery,
   IRemoteQueryCollection,
-} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/types/state/collection.interfaces';
 
 const app = initializeApp(environment.firebaseConfig);
 

@@ -10,9 +10,9 @@ import {
   SimpleChanges,
 } from '@angular/core';
 
-import isElectron from '@jakebarnby/altair-graphql-core/build/utils/is_electron';
-import { LogLine, SubscriptionResponse } from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
-import { AltairPanel } from '@jakebarnby/altair-graphql-core/build/plugin/panel';
+import isElectron from '@appwrite.io/altair-graphql-core/build/utils/is_electron';
+import { LogLine, SubscriptionResponse } from '@appwrite.io/altair-graphql-core/build/types/state/query.interfaces';
+import { AltairPanel } from '@appwrite.io/altair-graphql-core/build/plugin/panel';
 import { TrackByIdItem } from '../../interfaces/shared';
 import { EditorState, Extension } from '@codemirror/state';
 import { json } from '@codemirror/lang-json';

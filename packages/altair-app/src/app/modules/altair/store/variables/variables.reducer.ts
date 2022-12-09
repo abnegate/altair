@@ -4,8 +4,8 @@ import * as variables from './variables.action';
 import {
   FileVariable,
   VariableState,
-} from '@jakebarnby/altair-graphql-core/build/types/state/variable.interfaces';
-import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+} from '@appwrite.io/altair-graphql-core/build/types/state/variable.interfaces';
+import { getAltairConfig } from '@appwrite.io/altair-graphql-core/build/config';
 import { v4 as uuid } from 'uuid';
 
 const initialFileVariableState = (

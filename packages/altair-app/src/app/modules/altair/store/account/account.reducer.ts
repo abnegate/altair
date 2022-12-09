@@ -1,4 +1,4 @@
-import { AccountState } from '@jakebarnby/altair-graphql-core/build/types/state/account.interfaces';
+import { AccountState } from '@appwrite.io/altair-graphql-core/build/types/state/account.interfaces';
 
 import * as account from '../../store/account/account.action';
 

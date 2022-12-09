@@ -26,7 +26,7 @@ import * as postRequestActions from '../../store/post-request/post-request.actio
 import * as localActions from '../../store/local/local.action';
 import * as windowsMetaActions from '../../store/windows-meta/windows-meta.action';
 import * as layoutActions from '../../store/layout/layout.action';
-import isElectron from '@jakebarnby/altair-graphql-core/build/utils/is_electron';
+import isElectron from '@appwrite.io/altair-graphql-core/build/utils/is_electron';
 
 import {
   GqlService,
@@ -47,20 +47,20 @@ import {
   QueryState,
   SelectedOperation,
   SubscriptionResponse,
-} from '@jakebarnby/altair-graphql-core/build/types/state/query.interfaces';
-import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
-import { VariableState } from '@jakebarnby/altair-graphql-core/build/types/state/variable.interfaces';
-import { IQueryCollection } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
-import { PrerequestState } from '@jakebarnby/altair-graphql-core/build/types/state/prerequest.interfaces';
-import { PostrequestState } from '@jakebarnby/altair-graphql-core/build/types/state/postrequest.interfaces';
-import { LayoutState } from '@jakebarnby/altair-graphql-core/build/types/state/layout.interfaces';
-import { History } from '@jakebarnby/altair-graphql-core/build/types/state/history.interfaces';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
-import { WEBSOCKET_PROVIDER_ID } from '@jakebarnby/altair-graphql-core/build/subscriptions';
-import { DocView } from '@jakebarnby/altair-graphql-core/build/types/state/docs.interfaces';
-import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
-import { AltairUiAction } from '@jakebarnby/altair-graphql-core/build/plugin/ui-action';
-import { AltairPanel } from '@jakebarnby/altair-graphql-core/build/plugin/panel';
+} from '@appwrite.io/altair-graphql-core/build/types/state/query.interfaces';
+import { HeaderState } from '@appwrite.io/altair-graphql-core/build/types/state/header.interfaces';
+import { VariableState } from '@appwrite.io/altair-graphql-core/build/types/state/variable.interfaces';
+import { IQueryCollection } from '@appwrite.io/altair-graphql-core/build/types/state/collection.interfaces';
+import { PrerequestState } from '@appwrite.io/altair-graphql-core/build/types/state/prerequest.interfaces';
+import { PostrequestState } from '@appwrite.io/altair-graphql-core/build/types/state/postrequest.interfaces';
+import { LayoutState } from '@appwrite.io/altair-graphql-core/build/types/state/layout.interfaces';
+import { History } from '@appwrite.io/altair-graphql-core/build/types/state/history.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
+import { WEBSOCKET_PROVIDER_ID } from '@appwrite.io/altair-graphql-core/build/subscriptions';
+import { DocView } from '@appwrite.io/altair-graphql-core/build/types/state/docs.interfaces';
+import { PerWindowState } from '@appwrite.io/altair-graphql-core/build/types/state/per-window.interfaces';
+import { AltairUiAction } from '@appwrite.io/altair-graphql-core/build/plugin/ui-action';
+import { AltairPanel } from '@appwrite.io/altair-graphql-core/build/plugin/panel';
 import { GraphQLSchema } from 'graphql';
 import { str } from '../../utils';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/functions",
+  "name": "@appwrite.io/functions",
   "version": "0.1.5",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",

@@ -30,7 +30,7 @@ import {
   ViewUpdate,
 } from '@codemirror/view';
 import { Store } from '@ngrx/store';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
 import { Subscription } from 'rxjs';
 import {
   EnvironmentService,

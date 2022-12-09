@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/altair-koa-middleware",
+  "name": "@appwrite.io/altair-koa-middleware",
   "version": "0.1.8",
   "description": "Koa middleware for altair graphql client",
   "main": "./build/src/index.js",
@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/altair-graphql/altair#readme",
   "dependencies": {
-    "@jakebarnby/altair-static": "^0.1.8",
+    "@appwrite.io/altair-static": "^0.1.8",
     "@koa/router": "^10.1.1",
     "koa-send": "^5.0.1"
   },
@@ -52,5 +52,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/altair"
   },
-  "gitHead": "a97d9545be11df1a5188c019ba3a7422e1d52a3b"
+  "gitHead": "9a24604134c82f814a9c83847e06eb984d6f174e"
 }

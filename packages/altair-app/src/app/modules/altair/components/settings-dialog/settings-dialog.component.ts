@@ -31,8 +31,8 @@ import {
   StorageService,
 } from '../../services';
 import { KeyboardShortcutCategory } from '../../services/keybinder/keybinder.service';
-import { SettingsState } from '@jakebarnby/altair-graphql-core/build/types/state/settings.interfaces';
-import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { SettingsState } from '@appwrite.io/altair-graphql-core/build/types/state/settings.interfaces';
+import { AltairConfig } from '@appwrite.io/altair-graphql-core/build/config';
 import { Extension } from '@codemirror/state';
 import settingsSchema from '../../utils/settings.schema.json';
 import { getEditorExtensions } from './extensions';

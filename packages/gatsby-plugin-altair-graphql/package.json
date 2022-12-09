@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/gatsby-plugin-altair-graphql",
+  "name": "@appwrite.io/gatsby-plugin-altair-graphql",
   "version": "0.1.8",
   "description": "A gatsby plugin for using Altair GraphQL client",
   "main": "gatsby-node.js",
@@ -28,11 +28,11 @@
     "typescript": "4.7.4"
   },
   "dependencies": {
-    "@jakebarnby/altair-express-middleware": "^0.1.8"
+    "@appwrite.io/altair-express-middleware": "^0.1.8"
   },
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/altair"
   },
-  "gitHead": "a97d9545be11df1a5188c019ba3a7422e1d52a3b"
+  "gitHead": "9a24604134c82f814a9c83847e06eb984d6f174e"
 }

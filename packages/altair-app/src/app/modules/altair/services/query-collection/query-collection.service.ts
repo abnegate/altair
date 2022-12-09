@@ -7,7 +7,7 @@ import {
   IQuery,
   IQueryCollection,
   IQueryCollectionTree,
-} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/types/state/collection.interfaces';
 import { StorageService } from '../storage/storage.service';
 import { debug } from '../../utils/logger';
 import { getFileStr, str } from '../../utils';

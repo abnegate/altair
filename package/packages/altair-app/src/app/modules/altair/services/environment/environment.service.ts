@@ -7,9 +7,9 @@ import * as fromRoot from '../../store';
 import * as fromEnvironments from '../../store/environments/environments.reducer';
 import * as fromHeaders from '../../store/headers/headers.reducer';
 import { IDictionary } from '../../interfaces/shared';
-import { EnvironmentsState } from '@jakebarnby/altair-graphql-core/build/types/state/environments.interfaces';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
-import { HeaderState } from '@jakebarnby/altair-graphql-core/build/types/state/header.interfaces';
+import { EnvironmentsState } from '@appwrite.io/altair-graphql-core/build/types/state/environments.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
+import { HeaderState } from '@appwrite.io/altair-graphql-core/build/types/state/header.interfaces';
 import { merge } from 'lodash-es';
 
 // Unfortunately, Safari doesn't support lookbehind in regex: https://caniuse.com/js-regexp-lookbehind

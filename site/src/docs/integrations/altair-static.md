@@ -14,19 +14,19 @@ parent: Integrations
 This is a node module and can be installed using npm:
 
 ```
-npm install --save @jakebarnby/altair-static
+npm install --save @appwrite.io/altair-static
 ```
 
 Alternatively, if you are using [`yarn`](https://yarnpkg.com/):
 
 ```
-yarn add @jakebarnby/altair-static
+yarn add @appwrite.io/altair-static
 ```
 
 #### Usage
 
 ```ts
-import { getDistDirectory, renderAltair, RenderOptions } from '@jakebarnby/altair-static';
+import { getDistDirectory, renderAltair, RenderOptions } from '@appwrite.io/altair-static';
 import { ROUTE_ALTAIR, ROUTE_PATH_GRAPHQL, ROUTE_PATH_GRAPHQL_SUBSCRIPTIONS } from '../config';
 
 const renderOptions: RenderOptions = {

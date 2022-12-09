@@ -11,15 +11,15 @@ import {
   createPlugin,
   PluginManifest,
   PluginSource,
-} from '@jakebarnby/altair-graphql-core/build/plugin/plugin.interfaces';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
-import { PluginStateEntry } from '@jakebarnby/altair-graphql-core/build/types/state/local.interfaces';
-import { PluginConstructor } from '@jakebarnby/altair-graphql-core/build/plugin/base';
+} from '@appwrite.io/altair-graphql-core/build/plugin/plugin.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
+import { PluginStateEntry } from '@appwrite.io/altair-graphql-core/build/types/state/local.interfaces';
+import { PluginConstructor } from '@appwrite.io/altair-graphql-core/build/plugin/base';
 import { DbService } from '../db.service';
 import { first, take } from 'rxjs/operators';
 import { NotifyService } from '../notify/notify.service';
 import sanitize from 'sanitize-html';
-import { SettingsState } from '@jakebarnby/altair-graphql-core/build/types/state/settings.interfaces';
+import { SettingsState } from '@appwrite.io/altair-graphql-core/build/types/state/settings.interfaces';
 
 const PLUGIN_NAME_PREFIX = 'altair-graphql-plugin-';
 

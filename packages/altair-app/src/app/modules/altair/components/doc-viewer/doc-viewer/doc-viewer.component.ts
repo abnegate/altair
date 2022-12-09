@@ -24,11 +24,11 @@ import { fadeInOutAnimationTrigger } from '../../../animations';
 import * as Comlink from 'comlink';
 import { GqlService } from '../../../services';
 import getRootTypes from '../../../utils/get-root-types';
-import { DocView } from '@jakebarnby/altair-graphql-core/build/types/state/docs.interfaces';
-import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { DocView } from '@appwrite.io/altair-graphql-core/build/types/state/docs.interfaces';
+import { AltairConfig } from '@appwrite.io/altair-graphql-core/build/config';
 import { getDocUtilsWorkerAsyncClass } from './worker-helper';
 import marked from 'marked';
-import { SortByOptions } from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
+import { SortByOptions } from '@appwrite.io/altair-graphql-core/build/types/state/collection.interfaces';
 
 @UntilDestroy()
 @Component({

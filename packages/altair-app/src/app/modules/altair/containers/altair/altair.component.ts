@@ -47,36 +47,36 @@ import {
   ThemeRegistryService,
 } from '../../services';
 
-import isElectron from '@jakebarnby/altair-graphql-core/build/utils/is_electron';
+import isElectron from '@appwrite.io/altair-graphql-core/build/utils/is_electron';
 import { debug } from '../../utils/logger';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { PluginEventService } from '../../services/plugin/plugin-event.service';
-import { SettingsState } from '@jakebarnby/altair-graphql-core/build/types/state/settings.interfaces';
+import { SettingsState } from '@appwrite.io/altair-graphql-core/build/types/state/settings.interfaces';
 import {
   CollectionState,
   IQuery,
   IQueryCollection,
   SortByOptions,
-} from '@jakebarnby/altair-graphql-core/build/types/state/collection.interfaces';
-import { WindowsMetaState } from '@jakebarnby/altair-graphql-core/build/types/state/windows-meta.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/types/state/collection.interfaces';
+import { WindowsMetaState } from '@appwrite.io/altair-graphql-core/build/types/state/windows-meta.interfaces';
 import {
   EnvironmentsState,
   EnvironmentState,
-} from '@jakebarnby/altair-graphql-core/build/types/state/environments.interfaces';
-import { ICustomTheme } from '@jakebarnby/altair-graphql-core/build/theme';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
-import { AltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
-import { WindowState } from '@jakebarnby/altair-graphql-core/build/types/state/window.interfaces';
-import { AltairPanel } from '@jakebarnby/altair-graphql-core/build/plugin/panel';
+} from '@appwrite.io/altair-graphql-core/build/types/state/environments.interfaces';
+import { ICustomTheme } from '@appwrite.io/altair-graphql-core/build/theme';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
+import { AltairConfig } from '@appwrite.io/altair-graphql-core/build/config';
+import { WindowState } from '@appwrite.io/altair-graphql-core/build/types/state/window.interfaces';
+import { AltairPanel } from '@appwrite.io/altair-graphql-core/build/plugin/panel';
 import {
   externalLink,
   isExtension,
   mapToKeyValueList,
   openFile,
 } from '../../utils';
-import { AccountState } from '@jakebarnby/altair-graphql-core/build/types/state/account.interfaces';
+import { AccountState } from '@appwrite.io/altair-graphql-core/build/types/state/account.interfaces';
 import { catchUselessObservableError } from '../../utils/errors';
-import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
+import { PerWindowState } from '@appwrite.io/altair-graphql-core/build/types/state/per-window.interfaces';
 
 @UntilDestroy({ checkProperties: true })
 @Component({

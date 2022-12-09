@@ -9,7 +9,7 @@ import {
   getDistDirectory,
   renderAltair,
   renderInitialOptions,
-} from "@jakebarnby/altair-static";
+} from "@appwrite.io/altair-static";
 
 import { checkMultipleDataVersions } from "../utils/check-multi-data-versions";
 import { createSha256CspHash } from "../utils/csp-hash";

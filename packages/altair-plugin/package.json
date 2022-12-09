@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/altair-graphql-plugin",
+  "name": "@appwrite.io/altair-graphql-plugin",
   "version": "0.1.8",
   "description": "Plugin helper for altair graphql client",
   "main": "./build/index.js",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/altair-graphql/altair#readme",
   "dependencies": {
-    "@jakebarnby/altair-graphql-core": "^0.1.8"
+    "@appwrite.io/altair-graphql-core": "^0.1.8"
   },
   "devDependencies": {
     "@types/node": "^14.14.41",
@@ -38,5 +38,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/altair"
   },
-  "gitHead": "a97d9545be11df1a5188c019ba3a7422e1d52a3b"
+  "gitHead": "9a24604134c82f814a9c83847e06eb984d6f174e"
 }

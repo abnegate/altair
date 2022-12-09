@@ -10,7 +10,7 @@ import {
   hexToRgbStr,
   ICustomTheme,
   ITheme,
-} from '@jakebarnby/altair-graphql-core/build/theme';
+} from '@appwrite.io/altair-graphql-core/build/theme';
 
 import { css } from 'emotion';
 import { ThemeRegistryService } from '../../services';

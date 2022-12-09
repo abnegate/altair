@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/altair-codemirror-graphql",
+  "name": "@appwrite.io/altair-codemirror-graphql",
   "version": "0.1.8",
   "description": "GraphQL language support for CodeMirror",
   "scripts": {
@@ -41,5 +41,5 @@
     "typescript": "^4.3.4"
   },
   "license": "MIT",
-  "gitHead": "a97d9545be11df1a5188c019ba3a7422e1d52a3b"
+  "gitHead": "9a24604134c82f814a9c83847e06eb984d6f174e"
 }

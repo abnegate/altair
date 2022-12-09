@@ -5,7 +5,7 @@ import {
   fillAllFieldsCommands,
   showInDocsCommand,
   graphqlLanguage,
-} from '@jakebarnby/altair-codemirror-graphql';
+} from '@appwrite.io/altair-codemirror-graphql';
 import { getNamedType, GraphQLSchema, GraphQLType } from 'graphql';
 import { ContextToken } from 'graphql-language-service-parser';
 import { CompletionItem } from 'graphql-language-service-types';
@@ -23,7 +23,7 @@ import {
   windowIdStateField,
 } from './upload-widget';
 import { Store } from '@ngrx/store';
-import { RootState } from '@jakebarnby/altair-graphql-core/build/types/state/state.interfaces';
+import { RootState } from '@appwrite.io/altair-graphql-core/build/types/state/state.interfaces';
 
 export interface ExtensionsOptions {
   store: Store<RootState>;

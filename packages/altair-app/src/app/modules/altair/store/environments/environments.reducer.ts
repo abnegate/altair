@@ -1,9 +1,9 @@
 import { v4 as uuid } from 'uuid';
-import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+import { getAltairConfig } from '@appwrite.io/altair-graphql-core/build/config';
 import {
   EnvironmentsState,
   EnvironmentState,
-} from '@jakebarnby/altair-graphql-core/build/types/state/environments.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/types/state/environments.interfaces';
 import * as environmentsAction from './environments.action';
 
 export const getInitialEnvironmentState = (): EnvironmentState => {

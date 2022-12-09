@@ -5,7 +5,7 @@ import {
   ICustomTheme,
   light,
   mergeThemes,
-} from '@jakebarnby/altair-graphql-core/build/theme';
+} from '@appwrite.io/altair-graphql-core/build/theme';
 
 @Injectable({
   providedIn: 'root',

@@ -4,7 +4,7 @@ import {
   PluginEvent,
   PluginEventCallback,
   PluginEventPayloadMap,
-} from '@jakebarnby/altair-graphql-core/build/plugin/event/event.interfaces';
+} from '@appwrite.io/altair-graphql-core/build/plugin/event/event.interfaces';
 import { Subject, Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
 

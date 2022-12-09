@@ -1,7 +1,7 @@
 'use strict';
 
 import * as express from 'express';
-import { getDistDirectory, renderAltair, renderInitialOptions, RenderOptions } from '@jakebarnby/altair-static';
+import { getDistDirectory, renderAltair, renderInitialOptions, RenderOptions } from '@appwrite.io/altair-static';
 
 export const altairExpress = (opts: RenderOptions): express.Express => {
   const app = express();

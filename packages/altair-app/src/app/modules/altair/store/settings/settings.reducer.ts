@@ -3,8 +3,8 @@ import { jsonc } from '../../utils';
 import {
   SettingsLanguage,
   SettingsState,
-} from '@jakebarnby/altair-graphql-core/build/types/state/settings.interfaces';
-import { getAltairConfig } from '@jakebarnby/altair-graphql-core/build/config';
+} from '@appwrite.io/altair-graphql-core/build/types/state/settings.interfaces';
+import { getAltairConfig } from '@appwrite.io/altair-graphql-core/build/config';
 
 export const getInitialState = (): SettingsState => {
   const altairConfig = getAltairConfig();

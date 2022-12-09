@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/prettier-config-altair",
+  "name": "@appwrite.io/prettier-config-altair",
   "version": "0.1.5",
   "main": "index.js",
   "license": "MIT",

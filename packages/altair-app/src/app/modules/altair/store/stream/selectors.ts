@@ -1,5 +1,5 @@
 import { createSelector } from '@ngrx/store';
-import { PerWindowState } from '@jakebarnby/altair-graphql-core/build/types/state/per-window.interfaces';
+import { PerWindowState } from '@appwrite.io/altair-graphql-core/build/types/state/per-window.interfaces';
 import { getInitialState } from './stream.reducer';
 
 export const getStreamState = (state: PerWindowState) =>

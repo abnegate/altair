@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/altair-graphql-core",
+  "name": "@appwrite.io/altair-graphql-core",
   "version": "0.1.5",
   "description": "Several of the core logic for altair graphql client",
   "main": "./build/index.js",

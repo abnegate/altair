@@ -1,5 +1,5 @@
 {
-  "name": "@jakebarnby/altair-codemirror-graphql",
+  "name": "@appwrite.io/altair-codemirror-graphql",
   "version": "0.1.5",
   "description": "GraphQL language support for CodeMirror",
   "scripts": {
