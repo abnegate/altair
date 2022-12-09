@@ -1,6 +1,6 @@
 {
   "name": "@appwrite.io/prettier-config-altair",
-  "version": "0.1.8",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "gitHead": "9a24604134c82f814a9c83847e06eb984d6f174e"
